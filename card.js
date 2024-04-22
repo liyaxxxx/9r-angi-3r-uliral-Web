@@ -2,27 +2,27 @@
 const product = [
     {
         id: 0,
-        image: 'path/to/https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630',
+        image: 'https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630',
         title: 'Latte',
-        price: 120,
+        price: 5,
     },
     {
         id: 1,
-        image: 'image/hh-2.jpg',
+        image: 'https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeAmericano.jpg?impolicy=1by1_wide_topcrop_630',
         title: 'Americano',
-        price: 60,
+        price: 6,
     },
     {
         id: 2,
-        image: 'Espresso',
+        image: 'https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_Espresso_Single.jpg?impolicy=1by1_wide_topcrop_630',
         title: 'Espresso',
-        price: 230,
+        price: 10,
     },
     {
         id: 3,
-        image: 'Mocha Latte',
-        title: 'Head Phones',
-        price: 100,
+        image: 'https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_CaffeMocha.jpg?impolicy=1by1_wide_topcrop_630',
+        title: 'Mocha Latte',
+        price: 7,
     }
  ];
  const categories = [...new Set(product.map((item)=>
@@ -34,7 +34,7 @@ const product = [
     return(
         `<div class='box'>
             <div class='img-box'>
-                <img class='images' src={image}></img>
+                <img class='images' src=${image}></img>
             </div>
         <div class='bottom'>
         <p>${title}</p>
